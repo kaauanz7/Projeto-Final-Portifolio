@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
-
+:root{
+    --preto: #000;
+    --branco: #fff;
+    --dark-blue: #0066ff;
+    --light-blue: #4680ff;
+    --fonte-principal: 'Arial', sans-serif;
+}
 
 html, body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-principal);
     scroll-behavior: smooth;
-    background-color: #fff;
+    background-color: var(--branco);
 }
 
