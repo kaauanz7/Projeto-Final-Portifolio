@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+
+    .menu-hamburguer{
+        display: block;
+        background: none;
+        border: none;
+        color: var(--branco);
+        font-size: 1.8rem;
+        margin: 1rem;
+        cursor: pointer;
+    }
+
+    nav{
+        display: none;
+    }
+
+    nav.active{
+        display: block;
+    }
+
+}
