@@ -11,7 +11,7 @@
     }
 
      header{
-        flex-flow: column;
+        flex-direction: column;
     }
 
     .menu-hamburguer{
@@ -20,7 +20,6 @@
 
     #nav{
         display: none;
-        transition: 0.3s ease-in-out;
     }
 
     #nav.active{
@@ -29,7 +28,6 @@
 
     #nav ul{
         flex-direction: row;
-        align-items: flex-end;
     }
 
     .link{
