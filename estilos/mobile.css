@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
 
-    .menu-hamburguer{
+    .menu-hamburguer {
         display: block;
         background: none;
         border: none;
@@ -10,11 +10,29 @@
         cursor: pointer;
     }
 
-    nav{
-        display: none;
+     header{
+        flex-flow: column;
     }
 
-    nav.active{
+    .menu-hamburguer{
+        align-self: flex-start;
+    }
+
+    #nav{
+        display: none;
+        transition: 0.3s ease-in-out;
+    }
+
+    #nav.active{
+        display: block;
+    }
+
+    #nav ul{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .link{
         display: block;
     }
 
