@@ -150,3 +150,10 @@ section#habilidades{
     background-color: var(--light-blue);
     border-radius: 4px;
 }
+
+section#formacao {
+    grid-column: 2;
+    background-color: var(--branco);
+    border-radius: 10px;
+    padding: 1rem;
+}
