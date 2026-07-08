@@ -64,13 +64,13 @@ main{
 main h1 {
     color: var(--dark-blue);
     font-size: 2rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 main p {
     color: var(--preto);
     font-size: 1.2rem;
-    margin: 1rem;
+    margin-left: 1rem;
 }
 
 section#apresentaçao{
@@ -107,4 +107,46 @@ div.redes-sociais ul{
 
 div.redes-sociais li i{
     color: var(--dark-blue);
+}
+
+section#habilidades{
+    grid-column: 2;
+    background-color: var(--branco);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#habilidade-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#habilidade-container .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#habilidade-container .nome {
+    font-weight: bold;
+    color: var(--preto);
+}
+
+#habilidade-container .porcentagem {
+    font-weight: bold;
+    color: var(--light-blue);
+}
+
+#habilidade-container .barra {
+    width: 100%;
+    height: 10px;
+    background-color: var(--body);
+    border-radius: 4px;
+}
+
+#habilidade-container .progresso {
+    height: 100%;
+    background-color: var(--light-blue);
+    border-radius: 4px;
 }
