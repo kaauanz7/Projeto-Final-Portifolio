@@ -13,12 +13,24 @@
     --fonte-principal: 'Arial', sans-serif;
 }
 
-html, body{
-    font-family: var(--fonte-principal);
+body.escuro {
+    --body: #e7e5e5;
+    --preto: #000;
+    --branco: #fff;
+    --dark-blue: ;
+    --light-blue: #6c95ee;
+}
+
+html{
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-principal);
     background-color: var(--body);
     line-height: 1.6;
 }
+
 
 header {
     display: flex;
@@ -87,7 +99,7 @@ main p {
     margin-left: 1rem;
 }
 
-section#apresentaçao{
+section#apresentacao{
     grid-column: 2;
     align-items: center;
     background-color: var(--branco);
