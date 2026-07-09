@@ -1,41 +1,23 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
     .menu-hamburguer {
-        display: block;
-        background: none;
-        border: none;
-        color: var(--branco);
-        font-size: 1.8rem;
-        margin: 1rem;
-        cursor: pointer;
-    }
-
-     header{
-        flex-direction: column;
-    }
-
-    .menu-hamburguer{
-        align-self: flex-start;
-    }
-
-    #nav{
         display: none;
     }
 
-    #nav.active{
+    #nav {
         display: block;
     }
 
-    #nav ul{
+    #nav ul {
         flex-direction: row;
     }
 
-    .link{
-        display: block;
-    }
-
     #habilidade-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-
 }
