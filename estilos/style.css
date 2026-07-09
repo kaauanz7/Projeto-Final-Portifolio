@@ -240,6 +240,7 @@ div.projetos-container h2 {
 
 div.projetos-container summary {
     margin-left: 1rem;
+    color: var(--texto);
 }
 
 div.projeto img {
