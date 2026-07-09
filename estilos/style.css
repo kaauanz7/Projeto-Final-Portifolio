@@ -73,6 +73,7 @@ nav ul {
     text-decoration: none;
     font-size: 1.4rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .link:hover {
