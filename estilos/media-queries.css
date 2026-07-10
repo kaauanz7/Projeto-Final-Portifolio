@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 768px) {
     header {
         flex-direction: row;
@@ -18,21 +19,18 @@
     }
 
     main {
-        display: grid;
-        grid-template-columns: auto 1fr 2fr auto;
-        gap: 20px;
+        grid-template-columns: minmax(280px, 1fr) 2fr;
         align-items: start;
     }
 
     section#apresentacao {
-    grid-column: 2;
-    grid-row: 1 / 4;
+        grid-column: 1;
+        grid-row: 1 / 4;
     }
 
     section#habilidades,
     section#formacao,
     section#projetos {
-        grid-column: 3;
+        grid-column: 2;
     }
-
 }

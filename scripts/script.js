@@ -1,34 +1,29 @@
-const botao = document.getElementById('botao-tema');
+const botaoTema = document.getElementById('botao-tema');
 const body = document.body;
 
-// Persistência do tema
-const temasalvo = localStorage.getItem('tema');
-temaEscuro(temasalvo === 'escuro');
+function aplicarTema(escuro) {
+    body.classList.toggle('escuro', escuro);
+    botaoTema.innerHTML = escuro
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
 
-// Função para alternar entre tema claro e escuro
-function temaEscuro(tipo) {
-  if (tipo == true) {
-    body.classList.add('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
-  } else {
-    body.classList.remove('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
-  }
+    localStorage.setItem('tema', escuro ? 'escuro' : 'claro');
 }
 
-botao.addEventListener('click', () => {
-  const isescuro = body.classList.toggle('escuro');
-  temaEscuro(isescuro);
-  localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
+const temaSalvo = localStorage.getItem('tema');
+aplicarTema(temaSalvo === 'escuro');
+
+botaoTema.addEventListener('click', () => {
+    const temaAtualEscuro = !body.classList.contains('escuro');
+    aplicarTema(temaAtualEscuro);
 });
 
+const menu = document.querySelector('.menu-hamburguer');
+const nav = document.querySelector('#nav');
+const icon = menu.querySelector('i');
 
-const menu = document.querySelector(".menu-hamburguer");
-const nav = document.querySelector("#nav");
-const icon = menu.querySelector("i");
-
-menu.addEventListener("click", () => {
-    nav.classList.toggle("active");
-    icon.classList.toggle("fa-bars");
-    icon.classList.toggle("fa-xmark");
+menu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-xmark');
 });
