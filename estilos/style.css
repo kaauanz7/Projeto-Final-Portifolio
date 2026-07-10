@@ -231,3 +231,13 @@ div.projeto img {
     border-radius: 1rem;
     object-fit: cover;
 }
+
+footer {
+    background-color: var(--destaque);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-weight: bold;
+    color: var(--texto);
+}
