@@ -23,10 +23,6 @@ body.escuro {
     --fundo-card: #444444;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: var(--fonte-principal);
     background-color: var(--fundo-body);
